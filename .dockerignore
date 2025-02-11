@@ -1,0 +1,14 @@
+node_modules
+**/dist
+**/.DS_Store
+.prettierrc.json
+.eslintrc.cjs
+.vscode
+README.md
+Jenkinsfile
+.dockerignore
+npm-debug.log
+test
+.git/
+.gitignore
+ssl_cert_ai

@@ -1,0 +1,252 @@
+@import './base.css';
+
+body {
+    overflow: hidden;
+    background: #F4F3F3;
+    min-height: max-content;
+}
+
+.form-ht {
+    height: 100%;
+    overflow: auto;
+}
+
+.form-card {
+    box-shadow: 2px 2px 6px 0px #A9A9A933;
+    box-shadow: -2px -2px 6px 0px #A9A9A933;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.form-card-title {
+    border-bottom: 1px solid #F4F3F3;
+    color: #007bff;
+    padding: 8px 0px;
+    font-weight: 500;
+}
+
+.formkit-label {
+    font-weight: 400 !important;
+    color: #000000 !important;
+}
+
+.formkit-input {
+    background: #F4F3F3 !important;
+    font-size: 14px !important;
+}
+
+.formkit-inner {
+    box-shadow: none !important;
+    height: 100% !important;
+}
+
+.formkit-outer {
+    margin: 0px !important;
+}
+
+.formkit-wrapper {
+    max-width: 100% !important;
+}
+
+.box-shadow {
+    box-shadow: 2px 2px 6px 0px #A9A9A933 !important;
+    margin: 0px !important;
+}
+
+.v-list-item__prepend {
+    display: inline-block !important;
+}
+
+.v-data-table-header__content span {
+    font-weight: 500;
+    color: #007bff !important;
+    text-align: center;
+}
+
+.th-txt {
+    font-size: 16px;
+    font-weight: 500;
+    color: #007bff !important;
+    text-align: center !important;
+}
+
+.tr-txt {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
+
+.id-text {
+    color: #2996FB !important;
+}
+
+.filled-btn {
+    background-color: #007bff !important;
+    color: white !important;
+    text-transform: capitalize !important;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 2px;
+    text-align: center;
+    width: 100px;
+}
+
+.border-btn {
+    border: 1px solid #007bff !important;
+    color: #007bff !important;
+    text-transform: capitalize !important;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 2px;
+    text-align: center;
+    width: 100px;
+}
+
+.btn-wd {
+    width: auto !important;
+}
+
+.br-bt {
+    border-top: 1px solid #F4F3F3;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.v-pagination__list {
+    align-items: center;
+    margin: 0px;
+    display: flex;
+    flex-direction: row
+}
+
+.pag-div-ht {
+    height: 10%;
+}
+
+.table-ht {
+    height: 90%;
+    overflow: auto;
+}
+
+.page-view-ht {
+    height: 100%;
+}
+
+.buttons-fixed {
+    position: fixed;
+    bottom: 27px;
+    width: 100%;
+}
+
+.page-ht-90 {
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.no-data-div{
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+.no-data-txt{
+    font-weight: 500;
+    font-size: 18px;
+    color: black !important;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+.action-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2996fb;
+    border-radius: 4px;
+}
+.action-icon {
+    color: #2996fb !important;
+    font-size: 15px !important;
+}
+.list-br {
+    border-bottom: 0.5px solid rgb(240, 235, 235) !important;
+    color: #2996fb !important;
+    margin: 0px 5px !important;
+}
+.header-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.batchNo {
+    color: #007bff;
+    font-weight: 500;
+}
+td,th{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.height-100{
+    height: 100%;
+}
+.v-field--variant-solo{
+  box-shadow: none !important;
+  border:1px solid rgb(169, 169, 169) !important;
+}
+.v-messages__message{
+    color: red !important;
+}
+.v-field--variant-solo-filled{
+    box-shadow: none !important;
+}
+.libprep-select .v-input__details {
+    display: none !important;
+}
+.libprep-select .v-input__control{
+     height: 30px;
+}
+.libprep-select .v-input__control .v-field .v-field__input{
+    min-height: 0px !important;
+    height: 30px !important;
+}
+.libprep-select .v-input__control .v-field{
+    border-radius: 0px !important;
+}
+.libprep-select .v-input__control .v-field .v-field__input .v-autocomplete__selection{
+    margin-top:-5px !important
+}
+.patient-select .v-input__control{
+    height: 37px;
+}
+.patient-select .v-input__control .v-field .v-field__input{
+   min-height: 0px !important;
+   height: 30px !important;
+}
+
+.patient-select .v-input__control .v-field .v-field__input .v-autocomplete__selection{
+   margin-top:-2px !important
+}
+.patient-select .v-input__details {
+    display: none !important;
+}
+.scroll-hidden{
+    overflow: hidden;
+}

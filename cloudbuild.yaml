@@ -1,0 +1,20 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [
+          'build',
+          '--build-arg', 'VCSREF=$COMMIT_SHA',
+          '--build-arg', 'VCSREF_SHORT=${_COMMIT_SHA_SHORT}',
+          '--build-arg', 'BUILD_DATE=${_BUILD_DATE}',
+          '--build-arg', 'BUILD_NUMBER=${_CUSTOM_TAG}',
+          '-t', 'gcr.io/thermal-shuttle-153100/icore-v5-ilims:${_COMMIT_SHA_SHORT}',
+          '-t', 'gcr.io/thermal-shuttle-153100/icore-v5-ilims:${_CUSTOM_TAG}',
+          '-t', 'gcr.io/thermal-shuttle-153100/icore-v5-ilims:latest',
+          '.'
+        ]
+  timeout: 2000s
+images: [
+          'gcr.io/thermal-shuttle-153100/icore-v5-ilims:latest',
+          'gcr.io/thermal-shuttle-153100/icore-v5-ilims:${_CUSTOM_TAG}',
+          'gcr.io/thermal-shuttle-153100/icore-v5-ilims:${_COMMIT_SHA_SHORT}'
+        ]
+timeout: 2000s
